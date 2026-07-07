@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LekCurts Studio — CivEconomy: Future Leader</title>
+  <meta name="description" content="Lead a neolithic tribe from the Stone Age toward civilization using natural language. An AI-powered strategy simulation by LekCurts Studio.">
+  <meta name="theme-color" content="#08080d">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CivEconomy: Future Leader">
+  <meta property="og:description" content="Lead a neolithic tribe through natural language commands. AI-powered civilization simulation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo-wordmark.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- CSS (modular) -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo-emblem.png">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- NAVIGATION                                                  -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-brand">
+      <img src="assets/logo-lekcurts.png" alt="LekCurts Studio">
+    </a>
+
+    <div class="nav-links">
+      <a href="#about" class="nav-link"><span data-lang="en">About</span><span data-lang="pt">Sobre</span></a>
+      <a href="#guide" class="nav-link"><span data-lang="en">Guide</span><span data-lang="pt">Guia</span></a>
+      <a href="#codex" class="nav-link"><span data-lang="en">Codex</span><span data-lang="pt">Codex</span></a>
+      <a href="#diseases" class="nav-link"><span data-lang="en">Diseases</span><span data-lang="pt">Doenças</span></a>
+      <a href="#population" class="nav-link"><span data-lang="en">Population</span><span data-lang="pt">População</span></a>
+      <a href="#production" class="nav-link"><span data-lang="en">Production</span><span data-lang="pt">Produção</span></a>
+      <a href="#tips" class="nav-link"><span data-lang="en">Tips</span><span data-lang="pt">Dicas</span></a>
+      <a href="#cheats" class="nav-link">Cheats</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+
+      <div class="lang-toggle">
+        <button class="lang-btn is-active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="pt">PT</button>
+      </div>
+    </div>
+
+    <button class="nav-hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile">
+    <a href="#about" class="nav-link"><span data-lang="en">About</span><span data-lang="pt">Sobre</span></a>
+    <a href="#guide" class="nav-link"><span data-lang="en">Guide</span><span data-lang="pt">Guia</span></a>
+    <a href="#codex" class="nav-link"><span data-lang="en">Codex</span><span data-lang="pt">Codex</span></a>
+    <a href="#diseases" class="nav-link"><span data-lang="en">Diseases</span><span data-lang="pt">Doenças</span></a>
+    <a href="#population" class="nav-link"><span data-lang="en">Population</span><span data-lang="pt">População</span></a>
+    <a href="#production" class="nav-link"><span data-lang="en">Production</span><span data-lang="pt">Produção</span></a>
+    <a href="#tips" class="nav-link"><span data-lang="en">Tips</span><span data-lang="pt">Dicas</span></a>
+    <a href="#cheats" class="nav-link">Cheats</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <div class="lang-toggle">
+      <button class="lang-btn is-active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="pt">PT</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- HERO                                                        -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-particles"></div>
+  <div class="hero-content container">
+    <div class="hero-studio">
+      <img src="assets/logo-lekcurts.png" alt="LekCurts Studio">
+    </div>
+
+    <div class="hero-logo">
+      <img src="assets/logo-wordmark.png" alt="CivEconomy: Future Leader">
+    </div>
+
+    <div data-lang="en">
+      <p class="hero-tagline">Lead a neolithic tribe from the Stone Age toward civilization — using nothing but your voice and the knowledge of 10,000 years trapped inside your head.</p>
+    </div>
+    <div data-lang="pt">
+      <p class="hero-tagline">Lidere uma tribo neolítica da Idade da Pedra rumo à civilização — usando nada além da sua voz e o conhecimento de 10.000 anos preso na sua cabeça.</p>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#guide" class="btn btn-primary">
+        <span class="btn-label"><i class="fa-solid fa-play"></i> <span data-lang="en">Explore the Game</span><span data-lang="pt">Explorar o Jogo</span></span>
+        <span class="btn-spinner"></span>
+      </a>
+      <a href="#codex" class="btn btn-secondary">
+        <span class="btn-label"><i class="fa-solid fa-book"></i> <span data-lang="en">Teaching Codex</span><span data-lang="pt">Codex de Ensinos</span></span>
+        <span class="btn-spinner"></span>
+      </a>
+    </div>
+
+    <div class="divider" style="margin-bottom: var(--space-xl);"></div>
+
+    <!-- Backstory -->
+    <div data-lang="en">
+      <div class="hero-story">
+        <p>You don't know how it happened. One moment you were stuck in traffic, checking your phone — the next, you woke up naked on damp earth, surrounded by people with sun-darkened skin and mud-stiffened hair, speaking a language that existed in no dictionary.</p>
+        <p>The first months were pure survival. Learning to eat what they ate. Mimicking gestures. Sleeping on the ground, feeling cold that cut through to the bone. Slowly, word by word, gesture by gesture, the language started to make sense.</p>
+        <p>But something was wrong — or perhaps, strangely right. The seasons passed. Children grew. The young aged. But you… didn't. You could get hurt — the scar on your arm where the boar caught you was proof of that. You could, perhaps, die. But time… time simply didn't pass for you.</p>
+        <p>The elders noticed first. They whispered among themselves, watched with a mixture of fear and reverence. When the last of the old ones fell, the tribe's eyes turned to the one who never aged. To the one who had seen more seasons than anyone who ever lived.</p>
+        <p>They placed you beside the central fire. No one voted. No one argued. You simply WERE the eldest. The wisest. The leader.</p>
+        <p>And now, with the knowledge of 10,000 years of civilization trapped inside your head — but with no tools, no books, no Google — the only thing you can do is speak. Teach. Guide.</p>
+        <p class="story-end">The tribe listens. What you say next… changes everything.</p>
+      </div>
+    </div>
+    <div data-lang="pt">
+      <div class="hero-story">
+        <p>Você não sabe como aconteceu. Num momento estava no trânsito, checando o celular — no outro, acordou nu sobre terra úmida, cercado por gente de pele escurecida pelo sol, que falava uma língua que não existia em nenhum dicionário.</p>
+        <p>Os primeiros meses foram de pura sobrevivência. Aprender a comer o que eles comiam. Imitar os gestos. Dormir no chão, sentir o frio que atravessava até os ossos. Aos poucos, palavra por palavra, a língua começou a fazer sentido.</p>
+        <p>Mas algo estava errado — ou talvez, estranhamente certo. As estações passavam. As crianças cresciam. Os jovens envelheciam. Mas você… não. Podia se machucar — a cicatriz no braço era prova. Podia, talvez, morrer. Mas o tempo simplesmente não passava para você.</p>
+        <p>Os anciãos notaram primeiro. Sussurravam entre si, olhavam com uma mistura de medo e reverência. Quando o último dos velhos tombou, os olhos da tribo se voltaram para quem nunca envelhecia.</p>
+        <p>Eles te colocaram ao lado do fogo central. Ninguém votou. Ninguém discutiu. Você simplesmente ERA o mais velho. O mais sábio. O líder.</p>
+        <p>E agora, com o conhecimento de 10.000 anos de civilização preso na sua cabeça — mas sem nenhuma ferramenta, nenhum livro, nenhum Google — a única coisa que você pode fazer é falar. Ensinar. Guiar.</p>
+        <p class="story-end">A tribo ouve. O que você diz a seguir… muda tudo.</p>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span data-lang="en">Scroll to explore</span><span data-lang="pt">Role para explorar</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- ABOUT                                                       -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header reveal">
+      <i class="fa-solid fa-gamepad"></i>
+      <h2 data-lang="en">About the Game</h2>
+      <h2 data-lang="pt">Sobre o Jogo</h2>
+      <p data-lang="en">A deep simulation where every person, disease, crop, and tool is individually modeled.</p>
+      <p data-lang="pt">Uma simulação profunda onde cada pessoa, doença, cultivo e ferramenta é modelada individualmente.</p>
+    </div>
+
+    <div class="grid-3 features-grid">
+      <div class="feature-card reveal">
+        <i class="fa-solid fa-brain"></i>
+        <h3 data-lang="en">AI-Powered NLP</h3>
+        <h3 data-lang="pt">NLP com IA</h3>
+        <p data-lang="en">Speak naturally — the system understands intent through 3 layers: keywords, embeddings, and LLM classification.</p>
+        <p data-lang="pt">Fale naturalmente — o sistema entende intenção em 3 camadas: keywords, embeddings e LLM.</p>
+      </div>
+      <div class="feature-card reveal">
+        <i class="fa-solid fa-users"></i>
+        <h3 data-lang="en">Individual Simulation</h3>
+        <h3 data-lang="pt">Simulação Individual</h3>
+        <p data-lang="en">Every person has a name, age, gender, fertility, hearth. Birth, aging, death — all emergent.</p>
+        <p data-lang="pt">Cada pessoa tem nome, idade, gênero, fertilidade, lar. Nascimento, morte — tudo emergente.</p>
+      </div>
+      <div class="feature-card reveal">
+        <i class="fa-solid fa-seedling"></i>
+        <h3 data-lang="en">4 Knowledge Domains</h3>
+        <h3 data-lang="pt">4 Domínios de Conhecimento</h3>
+        <p data-lang="en">Health, Agriculture, Engineering, and Society — each with unique actions and synergies.</p>
+        <p data-lang="pt">Saúde, Agricultura, Engenharia e Sociedade — cada um com ações e sinergias únicas.</p>
+      </div>
+      <div class="feature-card reveal">
+        <i class="fa-solid fa-globe"></i>
+        <h3 data-lang="en">Procedural World</h3>
+        <h3 data-lang="pt">Mundo Procedural</h3>
+        <p data-lang="en">Unique terrain, biomes, climate, rivers. Every game a different world to explore.</p>
+        <p data-lang="pt">Terreno, biomas, clima e rios únicos. Cada jogo um mundo diferente.</p>
+      </div>
+      <div class="feature-card reveal">
+        <i class="fa-solid fa-wifi"></i>
+        <h3 data-lang="en">Multiplayer</h3>
+        <h3 data-lang="pt">Multiplayer</h3>
+        <p data-lang="en">WebSocket multiplayer — compete with AI tribes or rival players on the same world.</p>
+        <p data-lang="pt">Multiplayer via WebSocket — compita com tribos IA ou jogadores rivais no mesmo mundo.</p>
+      </div>
+      <div class="feature-card reveal">
+        <i class="fa-solid fa-desktop"></i>
+        <h3 data-lang="en">Desktop App</h3>
+        <h3 data-lang="pt">App Desktop</h3>
+        <p data-lang="en">Built with Electron — runs natively on Windows, macOS, and Linux.</p>
+        <p data-lang="pt">Feito com Electron — roda nativamente em Windows, macOS e Linux.</p>
+      </div>
+    </div>
+
+    <!-- Stats row -->
+    <div class="flex justify-center gap-lg" style="margin-top: var(--space-xl); flex-wrap: wrap;">
+      <div class="stat-item reveal">
+        <div class="stat-number">20+</div>
+        <div class="stat-label" data-lang="en">Teachings</div>
+        <div class="stat-label" data-lang="pt">Ensinos</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number">15</div>
+        <div class="stat-label" data-lang="en">Tools</div>
+        <div class="stat-label" data-lang="pt">Ferramentas</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number">4</div>
+        <div class="stat-label" data-lang="en">Diseases</div>
+        <div class="stat-label" data-lang="pt">Doenças</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number">70+</div>
+        <div class="stat-label" data-lang="en">Wild Foods</div>
+        <div class="stat-label" data-lang="pt">Alimentos</div>
+      </div>
+      <div class="stat-item reveal">
+        <div class="stat-number">5</div>
+        <div class="stat-label" data-lang="en">Biomes</div>
+        <div class="stat-label" data-lang="pt">Biomas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- HOW TO PLAY                                                 -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="guide">
+  <div class="container">
+    <div class="section-header reveal">
+      <i class="fa-solid fa-compass"></i>
+      <h2 data-lang="en">How to Play</h2>
+      <h2 data-lang="pt">Como Jogar</h2>
+      <p data-lang="en">Type what you want to teach your tribe. The game understands intent, not exact phrases.</p>
+      <p data-lang="pt">Digite o que quer ensinar à sua tribo. O jogo entende intenção, não frases exatas.</p>
+    </div>
+
+    <div class="grid-2 reveal">
+      <!-- Core Loop -->
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-rotate"></i> <span data-lang="en">Core Loop</span><span data-lang="pt">Ciclo Principal</span></div>
+        <div data-lang="en">
+          <p><strong>1 turn = 1 season</strong> (Spring → Summer → Autumn → Winter). 4 seasons = 1 year. Max lifespan ~75 years.</p>
+          <p style="margin-top: 8px;">Every turn you type a <em>natural language command</em> in the Council Chamber. The system classifies your intent through 3 layers: keyword matching, embedding similarity, and LLM fallback.</p>
+        </div>
+        <div data-lang="pt">
+          <p><strong>1 turno = 1 estação</strong> (Primavera → Verão → Outono → Inverno). 4 estações = 1 ano. Vida ~75 anos.</p>
+          <p style="margin-top: 8px;">Todo turno você digita um <em>comando em linguagem natural</em>. O sistema classifica em 3 camadas: keywords, embedding e LLM.</p>
+        </div>
+      </div>
+
+      <!-- Panels -->
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-table-columns"></i> <span data-lang="en">Game Panels</span><span data-lang="pt">Painéis do Jogo</span></div>
+        <div data-lang="en">
+          <p><strong>Council Chamber</strong> — where you type commands</p>
+          <p><strong>Stats</strong> — population, nutrition, research</p>
+          <p><strong>Food</strong> — caloric sources, stockpile, crops</p>
+          <p><strong>Health</strong> — disease prevalence, practices</p>
+          <p><strong>People</strong> — individual names, ages, hearths</p>
+          <p><strong>Knowledge</strong> — agriculture tree, tools, costs</p>
+          <p><strong>World</strong> — map, biomes, climate</p>
+          <p><strong>Chronicle</strong> — history of your civilization</p>
+        </div>
+        <div data-lang="pt">
+          <p><strong>Câmara do Conselho</strong> — onde você digita</p>
+          <p><strong>Estatísticas</strong> — população, nutrição, pesquisa</p>
+          <p><strong>Comida</strong> — fontes calóricas, estoque, cultivos</p>
+          <p><strong>Saúde</strong> — prevalência, práticas</p>
+          <p><strong>Pessoas</strong> — nomes, idades, lares</p>
+          <p><strong>Conhecimento</strong> — árvore agrícola, ferramentas</p>
+          <p><strong>Mundo</strong> — mapa, biomas, clima</p>
+          <p><strong>Crônica</strong> — história da civilização</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Turn sequence -->
+    <div class="card reveal" style="margin-top: var(--space-md);">
+      <div class="card-title"><i class="fa-solid fa-list-ol"></i> <span data-lang="en">What Happens Each Turn</span><span data-lang="pt">O Que Acontece a Cada Turno</span></div>
+      <div class="steps-list" data-lang="en">
+        <div class="step-item"><p>You type a command → system classifies it → action is executed</p></div>
+        <div class="step-item"><p><strong>Disease dynamics:</strong> natural drift + environment + season + active practices</p></div>
+        <div class="step-item"><p><strong>Food & Nutrition:</strong> gathering output → stockpile → nutrition status</p></div>
+        <div class="step-item"><p><strong>Production:</strong> firewood and water supply from workforce</p></div>
+        <div class="step-item"><p><strong>Demographics:</strong> aging, births, deaths, new pairs</p></div>
+        <div class="step-item"><p><strong>Tools:</strong> items in learning advance 1 season toward completion</p></div>
+        <div class="step-item"><p><strong>Agriculture:</strong> active experiments gain research points</p></div>
+        <div class="step-item"><p><strong>Religion:</strong> influence grows +1.5 per turn passively</p></div>
+      </div>
+      <div class="steps-list" data-lang="pt">
+        <div class="step-item"><p>Comando → classificação → ação executada</p></div>
+        <div class="step-item"><p><strong>Doenças:</strong> drift + ambiente + estação + práticas ativas</p></div>
+        <div class="step-item"><p><strong>Comida:</strong> produção → estoque → nutrição</p></div>
+        <div class="step-item"><p><strong>Produção:</strong> lenha e água da força de trabalho</p></div>
+        <div class="step-item"><p><strong>Demografia:</strong> envelhecimento, nascimentos, mortes, novos casais</p></div>
+        <div class="step-item"><p><strong>Ferramentas:</strong> em aprendizado avançam 1 estação</p></div>
+        <div class="step-item"><p><strong>Agricultura:</strong> pesquisa ganha pontos</p></div>
+        <div class="step-item"><p><strong>Religião:</strong> influência +1.5/turno passivamente</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- TEACHING CODEX                                              -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="codex">
+  <div class="container">
+    <div class="section-header reveal">
+      <i class="fa-solid fa-book-open"></i>
+      <h2 data-lang="en">Teaching Codex</h2>
+      <h2 data-lang="pt">Codex de Ensinos</h2>
+      <p data-lang="en">All actions across 4 categories. Speak naturally — the system understands intent.</p>
+      <p data-lang="pt">Todas as ações em 4 categorias. Fale naturalmente — o sistema entende intenção.</p>
+    </div>
+
+    <!-- Tab filters -->
+    <div class="tab-bar reveal">
+      <button class="tab-btn is-active" data-filter="all"><i class="fa-solid fa-border-all"></i> <span data-lang="en">All</span><span data-lang="pt">Tudo</span> <span class="tab-count">20+</span></button>
+      <button class="tab-btn" data-filter="health"><i class="fa-solid fa-heart-pulse"></i> <span data-lang="en">Health</span><span data-lang="pt">Saúde</span> <span class="tab-count">6</span></button>
+      <button class="tab-btn" data-filter="agriculture"><i class="fa-solid fa-seedling"></i> <span data-lang="en">Agriculture</span><span data-lang="pt">Agricultura</span> <span class="tab-count">4</span></button>
+      <button class="tab-btn" data-filter="engineering"><i class="fa-solid fa-hammer"></i> <span data-lang="en">Engineering</span><span data-lang="pt">Engenharia</span> <span class="tab-count">15</span></button>
+      <button class="tab-btn" data-filter="social"><i class="fa-solid fa-place-of-worship"></i> <span data-lang="en">Society</span><span data-lang="pt">Sociedade</span> <span class="tab-count">2</span></button>
+    </div>
+
+    <div class="card-stack">
+      <!-- HEALTH ACTIONS -->
+      <article class="card codex-card reveal" data-category="health">
+        <div class="card-title"><i class="fa-solid fa-fire-burner" style="color: var(--color-health);"></i> <span data-lang="en">Boil Drinking Water</span><span data-lang="pt">Ferver Água</span> <span class="badge badge-health">Health</span></div>
+        <p data-lang="en">Heat water over the fire until it bubbles. Kills invisible creatures that cause dysentery and parasites.</p>
+        <p data-lang="pt">Aqueça a água no fogo até borbulhar. Mata criaturas invisíveis causadoras de disenteria e parasitas.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th data-lang="en">Disease</th><th data-lang="pt">Doença</th><th data-lang="en">Impact</th><th data-lang="pt">Impacto</th></tr></thead>
+            <tbody>
+              <tr><td data-lang="en">Dysentery</td><td data-lang="pt">Disenteria</td><td class="val-pos">−15</td><td class="val-pos">−15</td></tr>
+              <tr><td data-lang="en">Parasites</td><td data-lang="pt">Parasitas</td><td class="val-pos">−10</td><td class="val-pos">−10</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="chip-list" style="margin-top: 10px;">
+          <span class="chip">boil water</span><span class="chip">purify water</span><span class="chip">ferver agua</span>
+        </div>
+      </article>
+
+      <article class="card codex-card reveal" data-category="health">
+        <div class="card-title"><i class="fa-solid fa-hands-bubbles" style="color: var(--color-health);"></i> <span data-lang="en">Wash Hands</span><span data-lang="pt">Lavar Mãos</span> <span class="badge badge-health">Health</span></div>
+        <p data-lang="en">Scrub hands clean before eating and after handling waste. Breaks the chain of sickness.</p>
+        <p data-lang="pt">Esfregar as mãos antes de comer e depois de lidar com resíduos.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th data-lang="en">Disease</th><th data-lang="pt">Doença</th><th data-lang="en">Impact</th><th data-lang="pt">Impacto</th></tr></thead>
+            <tbody>
+              <tr><td data-lang="en">Parasites</td><td data-lang="pt">Parasitas</td><td class="val-pos">−9</td><td class="val-pos">−9</td></tr>
+              <tr><td data-lang="en">Wound Infection</td><td data-lang="pt">Inf. Ferida</td><td class="val-pos">−8</td><td class="val-pos">−8</td></tr>
+              <tr><td data-lang="en">Dysentery</td><td data-lang="pt">Disenteria</td><td class="val-pos">−5</td><td class="val-pos">−5</td></tr>
+              <tr><td data-lang="en">Respiratory</td><td data-lang="pt">Respiratória</td><td class="val-pos">−3</td><td class="val-pos">−3</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="synergy-box">
+          <div class="synergy-title"><i class="fa-solid fa-bolt"></i> Synergy</div>
+          <p data-lang="en">Combined with <strong>Boil Water</strong>: extra Parasites −10, Dysentery −8 per season.</p>
+          <p data-lang="pt">Combinado com <strong>Ferver Água</strong>: bônus Parasitas −10, Disenteria −8/estação.</p>
+        </div>
+        <div class="chip-list" style="margin-top: 10px;">
+          <span class="chip">wash hands</span><span class="chip">hygiene</span><span class="chip">lavar maos</span>
+        </div>
+      </article>
+
+      <article class="card codex-card reveal" data-category="health">
+        <div class="card-title"><i class="fa-solid fa-house-medical" style="color: var(--color-health);"></i> <span data-lang="en">Quarantine the Sick</span><span data-lang="pt">Quarentena</span> <span class="badge badge-health">Health</span></div>
+        <p data-lang="en">Move those showing illness to shelters at the edge of camp. Respiratory −18, Dysentery −5.</p>
+        <p data-lang="pt">Mover doentes para abrigos na borda do acampamento. Respiratória −18, Disenteria −5.</p>
+        <div class="chip-list"><span class="chip">quarantine</span><span class="chip">isolate sick</span><span class="chip">isolar doentes</span></div>
+      </article>
+
+      <article class="card codex-card reveal" data-category="health">
+        <div class="card-title"><i class="fa-solid fa-shovel" style="color: var(--color-health);"></i> <span data-lang="en">Dig Latrines</span><span data-lang="pt">Cavar Fossas</span> <span class="badge badge-health">Health</span></div>
+        <p data-lang="en">Dig deep holes far from camp for all waste. Parasites −15, Dysentery −10.</p>
+        <p data-lang="pt">Cavar buracos profundos longe do acampamento. Parasitas −15, Disenteria −10.</p>
+        <div class="chip-list"><span class="chip">dig latrines</span><span class="chip">sanitation</span><span class="chip">cavar fossa</span></div>
+      </article>
+
+      <article class="card codex-card reveal" data-category="health">
+        <div class="card-title"><i class="fa-solid fa-fire" style="color: var(--color-health);"></i> <span data-lang="en">Burn the Dead</span><span data-lang="pt">Queimar Mortos</span> <span class="badge badge-health">Health</span></div>
+        <p data-lang="en">Cremate bodies to prevent contagion. Respiratory −10, Dysentery −8. Requires firewood.</p>
+        <p data-lang="pt">Cremar corpos para prevenir contágio. Respiratória −10, Disenteria −8. Requer lenha.</p>
+        <div class="chip-list"><span class="chip">burn dead</span><span class="chip">cremate</span><span class="chip">queimar mortos</span></div>
+      </article>
+
+      <article class="card codex-card reveal" data-category="health">
+        <div class="card-title"><i class="fa-solid fa-bandage" style="color: var(--color-health);"></i> <span data-lang="en">Clean Wounds</span><span data-lang="pt">Limpar Feridas</span> <span class="badge badge-health">Health</span></div>
+        <p data-lang="en">Wash wounds with clean water. Wound Infection −8, Parasites −2. Requires water.</p>
+        <p data-lang="pt">Lavar feridas com água limpa. Inf. Ferida −8, Parasitas −2. Requer água.</p>
+        <div class="synergy-box">
+          <div class="synergy-title"><i class="fa-solid fa-bolt"></i> Synergy</div>
+          <p data-lang="en">Combined with <strong>Boil Water</strong>: extra Wound −20, Parasites −5 (one-time).</p>
+          <p data-lang="pt">Combinado com <strong>Ferver Água</strong>: bônus Ferida −20, Parasitas −5 (único).</p>
+        </div>
+        <div class="chip-list"><span class="chip">clean wounds</span><span class="chip">lavar ferida</span></div>
+      </article>
+
+      <!-- AGRICULTURE ACTIONS -->
+      <article class="card codex-card reveal" data-category="agriculture">
+        <div class="card-title"><i class="fa-solid fa-wheat-awn" style="color: var(--color-agriculture);"></i> <span data-lang="en">Plant Crops</span><span data-lang="pt">Plantar</span> <span class="badge badge-agri">Agriculture</span></div>
+        <p data-lang="en">Begin cultivating discovered plants. Advances all agriculture knowledge nodes.</p>
+        <p data-lang="pt">Começar a cultivar plantas descobertas. Avança todos os nós de conhecimento agrícola.</p>
+        <div class="chip-list"><span class="chip">plant crops</span><span class="chip">start farming</span><span class="chip">plantar</span></div>
+      </article>
+
+      <article class="card codex-card reveal" data-category="agriculture">
+        <div class="card-title"><i class="fa-solid fa-mountain-sun" style="color: var(--color-agriculture);"></i> <span data-lang="en">Prepare Soil</span><span data-lang="pt">Preparar Solo</span> <span class="badge badge-agri">Agriculture</span></div>
+        <p data-lang="en">Work the earth before planting. Advances soil preparation knowledge.</p>
+        <p data-lang="pt">Trabalhar a terra antes do plantio. Avança conhecimento de preparo do solo.</p>
+        <div class="chip-list"><span class="chip">prepare soil</span><span class="chip">till earth</span><span class="chip">preparar solo</span></div>
+      </article>
+
+      <article class="card codex-card reveal" data-category="agriculture">
+        <div class="card-title"><i class="fa-solid fa-droplet" style="color: var(--color-agriculture);"></i> <span data-lang="en">Water Plants</span><span data-lang="pt">Regar Plantas</span> <span class="badge badge-agri">Agriculture</span></div>
+        <p data-lang="en">Carry water to crops. Advances irrigation knowledge.</p>
+        <p data-lang="pt">Levar água às plantações. Avança conhecimento de irrigação.</p>
+        <div class="chip-list"><span class="chip">water plants</span><span class="chip">irrigate</span><span class="chip">regar</span></div>
+      </article>
+
+      <article class="card codex-card reveal" data-category="agriculture">
+        <div class="card-title"><i class="fa-solid fa-hand-holding-seedling" style="color: var(--color-agriculture);"></i> <span data-lang="en">Tend Garden</span><span data-lang="pt">Cuidar Jardim</span> <span class="badge badge-agri">Agriculture</span></div>
+        <p data-lang="en">Pull weeds, protect plants. Advances weeding and plant care.</p>
+        <p data-lang="pt">Arrancar ervas, proteger plantas. Avança capina e cuidado.</p>
+        <div class="chip-list"><span class="chip">tend garden</span><span class="chip">weed</span><span class="chip">cuidar jardim</span></div>
+      </article>
+
+      <!-- ENGINEERING / TOOLS -->
+      <article class="card codex-card reveal" data-category="engineering">
+        <div class="card-title"><i class="fa-solid fa-hammer" style="color: var(--color-engineering);"></i> <span data-lang="en">Craftable Tools</span><span data-lang="pt">Ferramentas Craftáveis</span> <span class="badge badge-eng">Engineering</span></div>
+        <p data-lang="en">Teach your tribe to craft advanced tools. Each one boosts specific activities.</p>
+        <p data-lang="pt">Ensine sua tribo a produzir ferramentas avançadas. Cada uma melhora atividades específicas.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th data-lang="en">Tool</th><th data-lang="pt">Ferramenta</th><th data-lang="en">Bonus</th><th data-lang="pt">Bônus</th><th data-lang="en">Time</th><th data-lang="pt">Tempo</th><th data-lang="en">Prereq</th><th data-lang="pt">Pré-req</th></tr></thead>
+            <tbody>
+              <tr><td>Cordage</td><td>Cordas</td><td class="val-boost">Firewood +15%, Game +10%</td><td class="val-boost">Lenha +15%, Caça +10%</td><td class="val-accent">2 seasons</td><td class="val-accent">2 est.</td><td>—</td><td>—</td></tr>
+              <tr><td>Throwing Sticks</td><td>Tacos</td><td class="val-boost">Small Game +20%</td><td class="val-boost">Caça Peq. +20%</td><td class="val-accent">1 season</td><td class="val-accent">1 est.</td><td>—</td><td>—</td></tr>
+              <tr><td>Digging Sticks</td><td>Pás</td><td class="val-boost">Roots +30%</td><td class="val-boost">Raízes +30%</td><td class="val-accent">1 season</td><td class="val-accent">1 est.</td><td>—</td><td>—</td></tr>
+              <tr><td>Wood Wedges</td><td>Cunhas</td><td class="val-boost">Firewood +25%</td><td class="val-boost">Lenha +25%</td><td class="val-accent">1 season</td><td class="val-accent">1 est.</td><td>—</td><td>—</td></tr>
+              <tr><td>Bark Vessels</td><td>Recipientes</td><td class="val-boost">Water +30%</td><td class="val-boost">Água +30%</td><td class="val-accent">2 seasons</td><td class="val-accent">2 est.</td><td>—</td><td>—</td></tr>
+              <tr><td>Woven Baskets</td><td>Cestos</td><td class="val-boost">Fruits +30%, Eggs +30%</td><td class="val-boost">Frutas +30%, Ovos +30%</td><td class="val-accent">2 seasons</td><td class="val-accent">2 est.</td><td>—</td><td>—</td></tr>
+              <tr><td>Snares</td><td>Armadilhas</td><td class="val-boost">Small Game +40%</td><td class="val-boost">Caça Peq. +40%</td><td class="val-accent">1 season</td><td class="val-accent">1 est.</td><td><span class="prereq">Cordage</span></td><td><span class="prereq">Cordas</span></td></tr>
+              <tr><td>Fish Traps</td><td>Pesca</td><td class="val-boost">Fishing +50%</td><td class="val-boost">Pesca +50%</td><td class="val-accent">1 season</td><td class="val-accent">1 est.</td><td><span class="prereq">Cordage</span></td><td><span class="prereq">Cordas</span></td></tr>
+              <tr><td>Carrying Yoke</td><td>Jugo</td><td class="val-boost">Water +25%</td><td class="val-boost">Água +25%</td><td class="val-accent">1 season</td><td class="val-accent">1 est.</td><td><span class="prereq">Cordage</span></td><td><span class="prereq">Cordas</span></td></tr>
+              <tr><td>Dew Traps</td><td>Orvalho</td><td class="val-boost">Water +10%</td><td class="val-boost">Água +10%</td><td class="val-accent">2 seasons</td><td class="val-accent">2 est.</td><td>—</td><td>—</td></tr>
+              <tr><td>Bone & Antler</td><td>Osso</td><td class="val-boost">Fishing +15%, Game +15%</td><td class="val-boost">Pesca +15%, Caça +15%</td><td class="val-accent">1 season</td><td class="val-accent">1 est.</td><td>—</td><td>—</td></tr>
+              <tr><td>Deliberate Knapping</td><td>Lascamento</td><td class="val-boost">Game +25%, Firewood +20%</td><td class="val-boost">Caça +25%, Lenha +20%</td><td class="val-accent">2 seasons</td><td class="val-accent">2 est.</td><td>—</td><td>—</td></tr>
+              <tr><td>Clay Recognition</td><td>Argila</td><td class="val-boost">Storage +40%, Water +15%</td><td class="val-boost">Estoque +40%, Água +15%</td><td class="val-accent">1 season</td><td class="val-accent">1 est.</td><td>—</td><td>—</td></tr>
+              <tr><td>Bone Needles & Hide</td><td>Agulhas & Couro</td><td class="val-boost">Cold Protection +30%</td><td class="val-boost">Proteção Frio +30%</td><td class="val-accent">2 seasons</td><td class="val-accent">2 est.</td><td><span class="prereq">Bone + Cordage</span></td><td><span class="prereq">Osso + Cordas</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- Innate Tools -->
+      <article class="card codex-card reveal" data-category="engineering">
+        <div class="card-title"><i class="fa-solid fa-campground" style="color: var(--color-engineering);"></i> <span data-lang="en">Innate Tools (Tier 0)</span><span data-lang="pt">Ferramentas Inatas (Tier 0)</span> <span class="badge badge-eng">Starting</span></div>
+        <p data-lang="en">Your tribe starts with these — knowledge so basic every person already has it.</p>
+        <p data-lang="pt">Sua tribo começa com estas — conhecimento tão básico que todos já possuem.</p>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th data-lang="en">Tool</th><th data-lang="pt">Ferramenta</th><th data-lang="en">Enables</th><th data-lang="pt">Habilita</th></tr></thead>
+            <tbody>
+              <tr><td><i class="fa-solid fa-fire" style="color: var(--color-engineering);"></i> Fire Mastery</td><td><i class="fa-solid fa-fire" style="color: var(--color-engineering);"></i> Domínio do Fogo</td><td>Cooking, Cold 55%, Large Game</td><td>Cozinhar, Frio 55%, Caça Grande</td></tr>
+              <tr><td><i class="fa-solid fa-arrow-down-long" style="color: var(--color-engineering);"></i> Sharpened Sticks</td><td><i class="fa-solid fa-arrow-down-long" style="color: var(--color-engineering);"></i> Gravetos</td><td>Roots, Fishing, Small Game</td><td>Raízes, Pesca, Caça Peq.</td></tr>
+              <tr><td><i class="fa-solid fa-gem" style="color: var(--color-engineering);"></i> Hammerstones</td><td><i class="fa-solid fa-gem" style="color: var(--color-engineering);"></i> Pedras</td><td>Nuts, Shellfish, Marrow</td><td>Nozes, Mariscos, Medula</td></tr>
+              <tr><td><i class="fa-solid fa-triangle-exclamation" style="color: var(--color-engineering);"></i> Rough Edges</td><td><i class="fa-solid fa-triangle-exclamation" style="color: var(--color-engineering);"></i> Lascas</td><td>Butchering, Firewood, Greens</td><td>Abater, Lenha, Verduras</td></tr>
+              <tr><td><i class="fa-solid fa-basket-shopping" style="color: var(--color-engineering);"></i> Simple Carriers</td><td><i class="fa-solid fa-basket-shopping" style="color: var(--color-engineering);"></i> Carregadores</td><td>Water, Fruits, Eggs, 15k kcal</td><td>Água, Frutas, Ovos, 15k kcal</td></tr>
+              <tr><td><i class="fa-solid fa-shield-halved" style="color: var(--color-engineering);"></i> Uncured Hides</td><td><i class="fa-solid fa-shield-halved" style="color: var(--color-engineering);"></i> Peles</td><td>Cold Protection 35%</td><td>Proteção Frio 35%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- SOCIETY -->
+      <article class="card codex-card reveal" data-category="social">
+        <div class="card-title"><i class="fa-solid fa-place-of-worship" style="color: var(--color-social);"></i> <span data-lang="en">Found Religion</span><span data-lang="pt">Fundar Religião</span> <span class="badge badge-social">Society</span></div>
+        <p data-lang="en">Establish spiritual authority. Influence starts at 30/100, grows +1.5/season. Enables edicts.</p>
+        <p data-lang="pt">Estabelecer autoridade espiritual. Influência começa em 30/100, cresce +1.5/estação. Habilita editos.</p>
+        <div class="chip-list"><span class="chip">found religion</span><span class="chip">speak with spirits</span><span class="chip">criar religiao</span></div>
+      </article>
+
+      <article class="card codex-card reveal" data-category="social">
+        <div class="card-title"><i class="fa-solid fa-skull" style="color: var(--color-social);"></i> <span data-lang="en">Spirits Call the Weak</span><span data-lang="pt">Espíritos Chamam os Fracos</span> <span class="badge badge-social">Edict</span></div>
+        <p data-lang="en">Sacrifices elders and the sick. Frees ~1,230 net kcal each. Costs 8 influence. Requires 10+ influence.</p>
+        <p data-lang="pt">Sacrifica anciãos e doentes. Libera ~1.230 kcal cada. Custa 8 influência. Requer 10+.</p>
+        <div class="chip-list"><span class="chip">sacrifice the sick</span><span class="chip">cull the weak</span><span class="chip">sacrificar fracos</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- DISEASES                                                    -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="diseases">
+  <div class="container">
+    <div class="section-header reveal">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <h2 data-lang="en">Disease System</h2>
+      <h2 data-lang="pt">Sistema de Doenças</h2>
+      <p data-lang="en">Four diseases plague the tribe. Without guidance, they grow relentlessly every turn.</p>
+      <p data-lang="pt">Quatro doenças afligem a tribo. Sem orientação, crescem todo turno.</p>
+    </div>
+
+    <div class="grid-2 reveal">
+      <!-- Natural drift -->
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-arrow-trend-up"></i> <span data-lang="en">Natural Drift (per turn)</span><span data-lang="pt">Drift Natural (por turno)</span></div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th data-lang="en">Disease</th><th data-lang="pt">Doença</th><th>Drift</th><th data-lang="en">Type</th><th data-lang="pt">Tipo</th></tr></thead>
+            <tbody>
+              <tr><td>Dysentery</td><td>Disenteria</td><td class="val-neg">+0.2</td><td>Waterborne</td><td>Água</td></tr>
+              <tr><td>Parasites</td><td>Parasitas</td><td class="val-neg">+0.25</td><td>Fecal-oral</td><td>Fecal-oral</td></tr>
+              <tr><td>Wound Infection</td><td>Inf. Ferida</td><td class="val-neg">+0.15</td><td>Open wounds</td><td>Feridas</td></tr>
+              <tr><td>Respiratory</td><td>Respiratória</td><td class="val-neg">+0.1</td><td>Airborne</td><td>Aérea</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Seasonal effects -->
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-cloud-sun"></i> <span data-lang="en">Seasonal Effects</span><span data-lang="pt">Efeitos Sazonais</span></div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th data-lang="en">Season</th><th data-lang="pt">Estação</th><th data-lang="en">Resp.</th><th data-lang="pt">Resp.</th><th data-lang="en">Parasites</th><th data-lang="pt">Parasitas</th><th data-lang="en">Wound</th><th data-lang="pt">Ferida</th></tr></thead>
+            <tbody>
+              <tr><td><i class="fa-solid fa-snowflake"></i> Winter</td><td><i class="fa-solid fa-snowflake"></i> Inverno</td><td class="val-neg">+2.5</td><td class="val-neg">+2.5</td><td>—</td><td>—</td><td class="val-pos">−0.5</td><td class="val-pos">−0.5</td></tr>
+              <tr><td><i class="fa-solid fa-sun"></i> Summer</td><td><i class="fa-solid fa-sun"></i> Verão</td><td class="val-pos">−1.5</td><td class="val-pos">−1.5</td><td class="val-neg">+0.5</td><td class="val-neg">+0.5</td><td class="val-neg">+0.3</td><td class="val-neg">+0.3</td></tr>
+              <tr><td><i class="fa-solid fa-leaf"></i> Spring</td><td><i class="fa-solid fa-leaf"></i> Primavera</td><td>—</td><td>—</td><td class="val-neg">+0.3</td><td class="val-neg">+0.3</td><td>—</td><td>—</td></tr>
+              <tr><td><i class="fa-solid fa-wind"></i> Autumn</td><td><i class="fa-solid fa-wind"></i> Outono</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Suppression table -->
+    <div class="card reveal" style="margin-top: var(--space-md);">
+      <div class="card-title"><i class="fa-solid fa-shield-virus"></i> <span data-lang="en">Practice Suppression (per turn)</span><span data-lang="pt">Supressão por Prática (por turno)</span></div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th data-lang="en">Practice</th><th data-lang="pt">Prática</th><th>Dysen.</th><th>Parasit.</th><th data-lang="en">Wound</th><th data-lang="pt">Ferida</th><th>Resp.</th><th data-lang="en">Needs</th><th data-lang="pt">Precisa</th></tr></thead>
+          <tbody>
+            <tr><td>Boil Water</td><td>Ferver Água</td><td class="val-pos">−2.5</td><td class="val-pos">−1.8</td><td>—</td><td>—</td><td>—</td><td><i class="fa-solid fa-tree"></i> Firewood</td><td><i class="fa-solid fa-tree"></i> Lenha</td></tr>
+            <tr><td>Wash Hands</td><td>Lavar Mãos</td><td class="val-pos">−1.0</td><td class="val-pos">−1.8</td><td class="val-pos">−1.2</td><td class="val-pos">−1.2</td><td class="val-pos">−0.4</td><td><i class="fa-solid fa-droplet"></i> Water</td><td><i class="fa-solid fa-droplet"></i> Água</td></tr>
+            <tr><td>Quarantine</td><td>Quarentena</td><td class="val-pos">−0.8</td><td>—</td><td>—</td><td>—</td><td class="val-pos">−3.0</td><td>—</td><td>—</td></tr>
+            <tr><td>Dig Latrines</td><td>Cavar Fossas</td><td class="val-pos">−1.5</td><td class="val-pos">−2.5</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>Burn Dead</td><td>Queimar Mortos</td><td class="val-pos">−1.0</td><td>—</td><td class="val-pos">−0.5</td><td class="val-pos">−0.5</td><td class="val-pos">−1.5</td><td><i class="fa-solid fa-tree"></i> Firewood</td><td><i class="fa-solid fa-tree"></i> Lenha</td></tr>
+            <tr><td>Clean Wounds</td><td>Limpar Feridas</td><td>—</td><td class="val-pos">−0.3</td><td class="val-pos">−1.5</td><td class="val-pos">−1.5</td><td>—</td><td><i class="fa-solid fa-droplet"></i> Water</td><td><i class="fa-solid fa-droplet"></i> Água</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- POPULATION                                                  -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="population">
+  <div class="container">
+    <div class="section-header reveal">
+      <i class="fa-solid fa-people-group"></i>
+      <h2 data-lang="en">Population &amp; Demographics</h2>
+      <h2 data-lang="pt">População &amp; Demografia</h2>
+      <p data-lang="en">Every person is individually simulated — name, age, gender, hearth, fertility.</p>
+      <p data-lang="pt">Cada pessoa é simulada individualmente — nome, idade, gênero, lar, fertilidade.</p>
+    </div>
+
+    <div class="grid-2 reveal">
+      <!-- Age Groups -->
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-users"></i> <span data-lang="en">Age Groups</span><span data-lang="pt">Faixas Etárias</span></div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th data-lang="en">Group</th><th data-lang="pt">Grupo</th><th data-lang="en">Age</th><th data-lang="pt">Idade</th><th data-lang="en">Vulnerability</th><th data-lang="pt">Vuln.</th><th>kcal/day</th><th data-lang="en">Work</th><th data-lang="pt">Trabalho</th></tr></thead>
+            <tbody>
+              <tr><td>Infant</td><td>Bebê</td><td>0-4</td><td>0-4</td><td class="val-neg">2.5×</td><td class="val-neg">2.5×</td><td class="val-boost">800</td><td class="val-accent">0.0</td><td class="val-accent">0.0</td></tr>
+              <tr><td>Child</td><td>Criança</td><td>5-12</td><td>5-12</td><td class="val-neg">1.3×</td><td class="val-neg">1.3×</td><td class="val-boost">1,400</td><td class="val-accent">0.15</td><td class="val-accent">0.15</td></tr>
+              <tr><td>Youth</td><td>Jovem</td><td>13-17</td><td>13-17</td><td class="val-pos">0.8×</td><td class="val-pos">0.8×</td><td class="val-boost">1,800</td><td class="val-accent">0.65</td><td class="val-accent">0.65</td></tr>
+              <tr><td>Adult</td><td>Adulto</td><td>18-44</td><td>18-44</td><td class="val-accent">1.0×</td><td class="val-accent">1.0×</td><td class="val-boost">2,000</td><td class="val-accent">1.0</td><td class="val-accent">1.0</td></tr>
+              <tr><td>Elder</td><td>Ancião</td><td>45-75</td><td>45-75</td><td class="val-neg">2.0×</td><td class="val-neg">2.0×</td><td class="val-boost">1,600</td><td class="val-accent">0.35</td><td class="val-accent">0.35</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Conception -->
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-baby"></i> <span data-lang="en">Birth Rate by Season</span><span data-lang="pt">Natalidade por Estação</span></div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th data-lang="en">Season</th><th data-lang="pt">Estação</th><th data-lang="en">Conception Chance</th><th data-lang="pt">Chance</th></tr></thead>
+            <tbody>
+              <tr><td><i class="fa-solid fa-leaf" style="color: #4ade80;"></i> Spring</td><td><i class="fa-solid fa-leaf" style="color: #4ade80;"></i> Primavera</td><td class="val-boost">28%</td><td class="val-boost">28%</td></tr>
+              <tr><td><i class="fa-solid fa-sun" style="color: #fbbf24;"></i> Summer</td><td><i class="fa-solid fa-sun" style="color: #fbbf24;"></i> Verão</td><td class="val-boost">22%</td><td class="val-boost">22%</td></tr>
+              <tr><td><i class="fa-solid fa-wind" style="color: #fb923c;"></i> Autumn</td><td><i class="fa-solid fa-wind" style="color: #fb923c;"></i> Outono</td><td class="val-boost">16%</td><td class="val-boost">16%</td></tr>
+              <tr><td><i class="fa-solid fa-snowflake" style="color: #60a5fa;"></i> Winter</td><td><i class="fa-solid fa-snowflake" style="color: #60a5fa;"></i> Inverno</td><td class="val-boost">11%</td><td class="val-boost">11%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top: 8px;" data-lang="en">Pregnancy: <strong>3 seasons</strong>. Post-partum: 3-6 seasons. Max children/woman: 3-8.</p>
+        <p style="margin-top: 8px;" data-lang="pt">Gravidez: <strong>3 estações</strong>. Pós-parto: 3-6 estações. Máx filhos/mulher: 3-8.</p>
+      </div>
+    </div>
+
+    <!-- Nutrition table -->
+    <div class="card reveal" style="margin-top: var(--space-md);">
+      <div class="card-title"><i class="fa-solid fa-bowl-food"></i> <span data-lang="en">Nutrition Status Effects</span><span data-lang="pt">Efeitos do Status Nutricional</span></div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Status</th><th data-lang="en">Threshold</th><th data-lang="pt">Limite</th><th data-lang="en">Birth Mod</th><th data-lang="pt">Mod Nasc.</th><th data-lang="en">Death Mod</th><th data-lang="pt">Mod Morte</th><th data-lang="en">Disease Mod</th><th data-lang="pt">Mod Doença</th></tr></thead>
+          <tbody>
+            <tr><td>Surplus</td><td>≥110%</td><td>≥110%</td><td class="val-pos">1.15–1.50</td><td class="val-pos">1.15–1.50</td><td class="val-pos">0.85</td><td class="val-pos">0.85</td><td class="val-pos">0.85</td><td class="val-pos">0.85</td></tr>
+            <tr><td>Adequate</td><td>≥90%</td><td>≥90%</td><td class="val-accent">1.0</td><td class="val-accent">1.0</td><td class="val-accent">1.0</td><td class="val-accent">1.0</td><td class="val-accent">1.0</td><td class="val-accent">1.0</td></tr>
+            <tr><td>Scarce</td><td>≥60%</td><td>≥60%</td><td class="val-neg">0.5</td><td class="val-neg">0.5</td><td class="val-neg">1.3</td><td class="val-neg">1.3</td><td class="val-neg">1.3</td><td class="val-neg">1.3</td></tr>
+            <tr><td>Famine</td><td>≥40%</td><td>≥40%</td><td class="val-neg">0.1</td><td class="val-neg">0.1</td><td class="val-neg">2.0</td><td class="val-neg">2.0</td><td class="val-neg">1.7</td><td class="val-neg">1.7</td></tr>
+            <tr><td>Starvation</td><td>&lt;40%</td><td>&lt;40%</td><td class="val-neg">0.0</td><td class="val-neg">0.0</td><td class="val-neg">3.0</td><td class="val-neg">3.0</td><td class="val-neg">2.0</td><td class="val-neg">2.0</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- PRODUCTION                                                  -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="production">
+  <div class="container">
+    <div class="section-header reveal">
+      <i class="fa-solid fa-industry"></i>
+      <h2 data-lang="en">Production: Firewood &amp; Water</h2>
+      <h2 data-lang="pt">Produção: Lenha &amp; Água</h2>
+      <p data-lang="en">Two critical resources. Shortages directly impact health, cooking, and survival.</p>
+      <p data-lang="pt">Dois recursos críticos. Escassez impacta saúde e sobrevivência diretamente.</p>
+    </div>
+
+    <div class="grid-2 reveal">
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-tree" style="color: var(--color-agriculture);"></i> <span data-lang="en">Firewood</span><span data-lang="pt">Lenha</span></div>
+        <div class="formula">production = workers × 200 × biome × season × tools<br>consumption = hearths × 45 + pop × 6 <span class="cmt">// +20/hearth winter</span></div>
+        <p data-lang="en">Biome: Tropical 1.3, Temperate 1.15, Savanna 0.5, Tundra 0.1, Desert 0.05.</p>
+        <p data-lang="pt">Bioma: Tropical 1.3, Temperado 1.15, Savana 0.5, Tundra 0.1, Deserto 0.05.</p>
+        <p style="margin-top: 6px;" data-lang="en"><strong>Why:</strong> Fuels cooking (raw food → disease), hearth fires (cold), boiling water.</p>
+        <p style="margin-top: 6px;" data-lang="pt"><strong>Por quê:</strong> Cozinhar (comida crua → doença), fogueiras (frio), ferver água.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-droplet" style="color: var(--color-boost);"></i> <span data-lang="en">Water</span><span data-lang="pt">Água</span></div>
+        <div class="formula">production = workers × 450 × distanceMod × season × tools<br>consumption = pop × 22 + pop × 6 <span class="cmt">// +5/person summer</span></div>
+        <p data-lang="en"><strong>Why:</strong> Water supply = hygiene factor → Wash Hands / Clean Wounds effectiveness.</p>
+        <p data-lang="pt"><strong>Por quê:</strong> Suprimento de água = fator higiene → eficácia de Lavar Mãos / Limpar Feridas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- TIPS & STRATEGY                                             -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="tips">
+  <div class="container">
+    <div class="section-header reveal">
+      <i class="fa-solid fa-lightbulb"></i>
+      <h2 data-lang="en">Tips &amp; Strategy</h2>
+      <h2 data-lang="pt">Dicas &amp; Estratégia</h2>
+    </div>
+
+    <div class="grid-2 reveal">
+      <!-- Priority list -->
+      <div class="card">
+        <div class="card-title"><i class="fa-solid fa-crown" style="color: var(--accent);"></i> <span data-lang="en">First 10 Turns Priority</span><span data-lang="pt">Prioridade (10 Primeiros Turnos)</span></div>
+        <div class="priority-list" data-lang="en">
+          <div class="priority-item"><p><strong>Boil Water</strong> — biggest disease impact</p></div>
+          <div class="priority-item"><p><strong>Wash Hands</strong> — hits all 4 diseases + synergy</p></div>
+          <div class="priority-item"><p><strong>Dig Latrines</strong> — Parasites −15</p></div>
+          <div class="priority-item"><p><strong>Make Cordage</strong> — unlocks Snares, Fish Traps, Yoke</p></div>
+          <div class="priority-item"><p><strong>Quarantine</strong> — Respiratory −18 (winter killer)</p></div>
+          <div class="priority-item"><p><strong>Digging Sticks</strong> — fast +30% roots</p></div>
+          <div class="priority-item"><p><strong>Woven Baskets</strong> — boosts 6 food sources</p></div>
+        </div>
+        <div class="priority-list" data-lang="pt">
+          <div class="priority-item"><p><strong>Ferver Água</strong> — maior impacto em doenças</p></div>
+          <div class="priority-item"><p><strong>Lavar Mãos</strong> — 4 doenças + sinergia</p></div>
+          <div class="priority-item"><p><strong>Cavar Fossas</strong> — Parasitas −15</p></div>
+          <div class="priority-item"><p><strong>Cordas</strong> — desbloqueia Armadilhas, Pesca, Jugo</p></div>
+          <div class="priority-item"><p><strong>Quarentena</strong> — Respiratória −18</p></div>
+          <div class="priority-item"><p><strong>Pás</strong> — rápido +30% raízes</p></div>
+          <div class="priority-item"><p><strong>Cestos</strong> — 6 fontes de comida</p></div>
+        </div>
+      </div>
+
+      <!-- Common mistakes + synergies -->
+      <div style="display: flex; flex-direction: column; gap: var(--space-md);">
+        <div class="card">
+          <div class="card-title"><i class="fa-solid fa-triangle-exclamation" style="color: var(--color-negative);"></i> <span data-lang="en">Common Mistakes</span><span data-lang="pt">Erros Comuns</span></div>
+          <div data-lang="en">
+            <p><strong>Ignoring production:</strong> Health practices need firewood/water to work.</p>
+            <p><strong>Overpopulation:</strong> Below 60% kcal/capita → Famine.</p>
+            <p><strong>Winter unprepared:</strong> Respiratory +2.5/turn. Quarantine first.</p>
+            <p><strong>Early culling:</strong> Need 10+ influence or edicts are refused.</p>
+          </div>
+          <div data-lang="pt">
+            <p><strong>Ignorar produção:</strong> Práticas precisam de lenha/água.</p>
+            <p><strong>Superpopulação:</strong> Abaixo de 60% kcal → Fome.</p>
+            <p><strong>Inverno:</strong> Respiratória +2.5/turno. Quarentena primeiro.</p>
+            <p><strong>Culling cedo:</strong> Precisa 10+ influência.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title"><i class="fa-solid fa-bolt" style="color: var(--color-synergy);"></i> <span data-lang="en">Key Synergies</span><span data-lang="pt">Sinergias Chave</span></div>
+          <div data-lang="en">
+            <p><strong>Boil Water + Wash Hands:</strong> extra Parasites −0.8, Dysentery −0.6/turn.</p>
+            <p><strong>Cordage → Snares + Fish Traps:</strong> Game +40%, Fishing +50%.</p>
+            <p><strong>Wedges + Cordage:</strong> Firewood +40% combined.</p>
+          </div>
+          <div data-lang="pt">
+            <p><strong>Ferver Água + Lavar Mãos:</strong> bônus Parasitas −0.8, Disenteria −0.6/turno.</p>
+            <p><strong>Cordas → Armadilhas + Pesca:</strong> Caça +40%, Pesca +50%.</p>
+            <p><strong>Cunhas + Cordas:</strong> Lenha +40% combinado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- CHEATS                                                      -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="cheats">
+  <div class="container">
+    <div class="section-header reveal">
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+      <h2>Cheats &amp; Dev Console</h2>
+      <p data-lang="en">Press <code>~</code> or <code>Shift+`</code> to open the Developer Console.</p>
+      <p data-lang="pt">Pressione <code>~</code> ou <code>Shift+`</code> para abrir o Console Dev.</p>
+    </div>
+
+    <div class="cheats-grid">
+      <div class="card cheat-card reveal">
+        <div class="card-title"><i class="fa-solid fa-wheat-awn"></i> omniscient_farmer</div>
+        <p data-lang="en">Unlocks <strong>ALL agriculture knowledge</strong> instantly — every propagation technique mastered.</p>
+        <p data-lang="pt">Desbloqueia <strong>TODA agricultura</strong> instantaneamente.</p>
+        <div class="chip-list" style="margin-top: 10px;"><span class="chip chip-cheat">omniscient_farmer</span></div>
+      </div>
+
+      <div class="card cheat-card reveal">
+        <div class="card-title"><i class="fa-solid fa-robot"></i> future_advisor</div>
+        <p data-lang="en">Summons a <strong>21st Century Advisor</strong> who analyzes data and recommends optimal actions.</p>
+        <p data-lang="pt">Invoca um <strong>Conselheiro do Séc. 21</strong> que analisa dados e recomenda ações.</p>
+        <div class="chip-list" style="margin-top: 10px;"><span class="chip chip-cheat">future_advisor</span></div>
+      </div>
+
+      <div class="card cheat-card reveal">
+        <div class="card-title"><i class="fa-solid fa-eye"></i> all_seeing_eye</div>
+        <p data-lang="en">Reveals the <strong>entire world map</strong> instantly — removes all fog of war.</p>
+        <p data-lang="pt">Revela o <strong>mapa do mundo inteiro</strong> instantaneamente.</p>
+        <div class="chip-list" style="margin-top: 10px;"><span class="chip chip-cheat">all_seeing_eye</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- FAQ                                                         -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section" id="faq">
+  <div class="container-narrow">
+    <div class="section-header reveal">
+      <i class="fa-solid fa-circle-question"></i>
+      <h2>FAQ</h2>
+      <p data-lang="en">Frequently asked questions about CivEconomy: Future Leader.</p>
+      <p data-lang="pt">Perguntas frequentes sobre CivEconomy: Future Leader.</p>
+    </div>
+
+    <div class="card-stack reveal">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-lang="en">Is the game online or offline?</span>
+          <span data-lang="pt">O jogo é online ou offline?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p data-lang="en">Both! The game runs fully offline in your browser or as a Desktop app (Electron). There's also optional WebSocket multiplayer where you compete with AI tribes or other players on the same world.</p>
+          <p data-lang="pt">Ambos! O jogo roda 100% offline no browser ou como app Desktop (Electron). Também tem multiplayer opcional via WebSocket onde você compete com tribos IA ou outros jogadores.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-lang="en">Do I need AI / Ollama to play?</span>
+          <span data-lang="pt">Preciso de IA / Ollama para jogar?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p data-lang="en">No! The keyword matching system works instantly without any AI. Ollama (local LLM) is optional and adds embedding similarity + LLM classification for more natural commands.</p>
+          <p data-lang="pt">Não! O sistema de keywords funciona instantaneamente sem IA. Ollama (LLM local) é opcional e adiciona embeddings + classificação LLM para comandos mais naturais.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-lang="en">Can I play in Portuguese?</span>
+          <span data-lang="pt">Posso jogar em português?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p data-lang="en">Yes! The NLP system understands commands in both English and Portuguese. You can type "ferver agua" or "boil water" — both work.</p>
+          <p data-lang="pt">Sim! O sistema de NLP entende comandos em inglês e português. Pode digitar "ferver agua" ou "boil water" — ambos funcionam.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-lang="en">What biomes are available?</span>
+          <span data-lang="pt">Quais biomas estão disponíveis?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p data-lang="en">Five biomes: Tropical Forest, Temperate Forest, Savanna, Tundra, and Desert. Each affects food availability, firewood production, climate, and disease dynamics.</p>
+          <p data-lang="pt">Cinco biomas: Floresta Tropical, Floresta Temperada, Savana, Tundra e Deserto. Cada um afeta comida, lenha, clima e dinâmica de doenças.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-lang="en">How does the religion system work?</span>
+          <span data-lang="pt">Como funciona o sistema de religião?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p data-lang="en">Say "found a religion" to create one with a random name. Influence starts at 30/100 and grows +1.5/season. Higher influence unlocks edicts like sacrificing the sick. Below 10 influence, edicts are refused.</p>
+          <p data-lang="pt">Diga "criar religião" para fundar uma com nome aleatório. Influência começa em 30/100 e cresce +1.5/estação. Mais influência desbloqueia editos. Abaixo de 10, editos são recusados.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-lang="en">What platforms is the game available on?</span>
+          <span data-lang="pt">Em quais plataformas o jogo está disponível?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p data-lang="en">The game runs in any modern browser (Chrome, Firefox, Safari, Edge) and as a native Desktop app via Electron on Windows, macOS, and Linux.</p>
+          <p data-lang="pt">O jogo roda em qualquer browser moderno (Chrome, Firefox, Safari, Edge) e como app Desktop via Electron em Windows, macOS e Linux.</p>
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-lang="en">How many people can my tribe have?</span>
+          <span data-lang="pt">Quantas pessoas minha tribo pode ter?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer"><div class="faq-answer-inner">
+          <p data-lang="en">There's no hard cap. You start with ~15-20 people. Growth depends on food, health, and birth rates. Top players have reached 200+ population. But more people means more kcal needed — balance is key.</p>
+          <p data-lang="pt">Não há limite fixo. Você começa com ~15-20 pessoas. Crescimento depende de comida, saúde e natalidade. Jogadores top alcançaram 200+. Mas mais gente = mais kcal — equilíbrio é essencial.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- FOOTER                                                      -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-brand">
+      <img src="assets/logo-lekcurts.png" alt="LekCurts Studio">
+    </div>
+    <p>&copy; 2026 LekCurts Studio. All rights reserved.</p>
+    <p style="margin-top: 4px;" data-lang="en">CivEconomy: Future Leader — Your commands shape civilization.</p>
+    <p style="margin-top: 4px;" data-lang="pt">CivEconomy: Future Leader — Seus comandos moldam a civilização.</p>
+    <div class="footer-links">
+      <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="#" title="Discord"><i class="fa-brands fa-discord"></i></a>
+      <a href="#" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button class="scroll-top" aria-label="Scroll to top">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<!-- JS (ES modules) -->
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>

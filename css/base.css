@@ -1,0 +1,102 @@
+/* ── Reset & Base Typography ────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-deep);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Ambient glow */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(200,164,92,0.035) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 15% 100%, rgba(96,165,250,0.02) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 85% 100%, rgba(192,132,252,0.02) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+::selection {
+  background: rgba(200, 164, 92, 0.3);
+  color: #f5f0e6;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(154, 142, 120, 0.35); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(154, 142, 120, 0.55); }
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 600; }
+h3 { font-size: 1.15rem; font-weight: 600; }
+h4 { font-size: 1rem; font-weight: 600; }
+
+p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.75;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover { color: var(--accent-bright); }
+
+strong { color: var(--text-primary); font-weight: 600; }
+em { color: var(--accent); font-style: normal; }
+code {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-code);
+  color: var(--accent);
+}
+
+img { max-width: 100%; height: auto; display: block; }
+ul, ol { list-style: none; }
+
+/* Utility */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.text-accent { color: var(--accent); }
+.text-muted { color: var(--text-muted); }
+.font-mono { font-family: var(--font-mono); }
+.font-serif { font-family: var(--font-serif); }

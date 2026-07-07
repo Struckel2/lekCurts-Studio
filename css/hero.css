@@ -1,0 +1,166 @@
+/* ── Hero Section ───────────────────────────────────────────── */
+
+.hero {
+  position: relative;
+  padding: 100px 0 80px;
+  text-align: center;
+  overflow: hidden;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Particle canvas behind content */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Studio badge */
+.hero-studio {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: var(--space-xl);
+}
+
+.hero-studio img {
+  height: 20px;
+  width: auto;
+  opacity: 0.5;
+}
+
+/* Game logo */
+.hero-logo {
+  max-width: 400px;
+  margin: 0 auto var(--space-lg);
+}
+
+.hero-logo img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 40px rgba(200, 164, 92, 0.15));
+}
+
+/* Title fallback */
+.hero h1 {
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  margin-bottom: var(--space-sm);
+}
+
+.hero h1 .text-accent {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-bright) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-tagline {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto var(--space-xl);
+  line-height: 1.7;
+}
+
+/* CTA group */
+.hero-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+  flex-wrap: wrap;
+}
+
+/* Story block */
+.hero-story {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hero-story p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  margin-bottom: var(--space-md);
+}
+
+.hero-story p:first-child::first-letter {
+  font-size: 2.8em;
+  float: left;
+  line-height: 1;
+  margin-right: 8px;
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.hero-story .story-end {
+  text-align: center;
+  color: var(--accent);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-top: var(--space-lg);
+}
+
+/* Scroll indicator */
+.hero-scroll {
+  margin-top: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: floatDown 2s ease-in-out infinite;
+}
+
+.hero-scroll i { font-size: 0.9rem; }
+
+@keyframes floatDown {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(6px); opacity: 1; }
+}
+
+/* Bilingual toggle in hero */
+[data-lang="pt"] { display: none; }
+body.lang-pt [data-lang="en"] { display: none; }
+body.lang-pt [data-lang="pt"] { display: revert; }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .hero {
+    padding: 80px 0 60px;
+    min-height: auto;
+  }
+
+  .hero-logo {
+    max-width: 280px;
+  }
+
+  .hero-story p {
+    font-size: 0.88rem;
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "lekcurts-studio",
+  "version": "1.0.0",
+  "description": "LekCurts Studio — CivEconomy: Future Leader official site",
+  "scripts": {
+    "start": "npx serve -s . -l ${PORT:-3000}"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

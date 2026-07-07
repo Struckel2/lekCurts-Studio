@@ -1,0 +1,237 @@
+/* ── Section-specific styles ────────────────────────────────── */
+
+/* Reveal animation for sections */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* About — features grid */
+#about .features-grid {
+  margin-top: var(--space-lg);
+}
+
+/* Guide — numbered steps */
+.steps-list {
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.step-item {
+  counter-increment: step;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}
+
+.step-item::before {
+  content: counter(step);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent-dim);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.step-item p { margin: 0; }
+
+/* Disease section — category icon badges */
+.disease-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.disease-icon.health { background: var(--color-health-dim); color: var(--color-health); }
+.disease-icon.agriculture { background: var(--color-agriculture-dim); color: var(--color-agriculture); }
+.disease-icon.engineering { background: var(--color-engineering-dim); color: var(--color-engineering); }
+.disease-icon.social { background: var(--color-social-dim); color: var(--color-social); }
+
+/* Tips — priority list */
+.priority-list {
+  counter-reset: priority;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.priority-item {
+  counter-increment: priority;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  transition: border-color var(--transition-fast);
+}
+
+.priority-item:hover {
+  border-color: var(--border-medium);
+}
+
+.priority-item::before {
+  content: '#' counter(priority);
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent);
+  min-width: 28px;
+}
+
+.priority-item strong {
+  margin-right: 4px;
+}
+
+/* Cheats section */
+.cheats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-md);
+}
+
+/* Tab filter bar */
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  background: var(--bg-surface);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tab-btn:hover {
+  border-color: var(--border-medium);
+  color: var(--text-primary);
+  background: var(--bg-surface-raised);
+}
+
+.tab-btn.is-active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.tab-btn .tab-count {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+/* Filterable content */
+.codex-card[data-category] {
+  transition: opacity 0.3s var(--ease-out), transform 0.3s var(--ease-out);
+}
+
+.codex-card.is-hidden {
+  display: none;
+}
+
+/* Card list inside sections */
+.card-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: var(--space-xl) 0 var(--space-2xl);
+  position: relative;
+}
+
+.site-footer::before {
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 0 auto var(--space-xl);
+  max-width: 400px;
+  background: linear-gradient(90deg, transparent, rgba(200,164,92,0.2), transparent);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: var(--space-md);
+}
+
+.footer-brand img {
+  height: 24px;
+  width: auto;
+  opacity: 0.4;
+}
+
+.footer-brand span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.site-footer p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-top: var(--space-md);
+}
+
+.footer-links a {
+  font-size: 1rem;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
