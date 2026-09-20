@@ -165,11 +165,6 @@
   50% { transform: translateY(6px); opacity: 1; }
 }
 
-/* Bilingual toggle in hero */
-[data-lang="pt"] { display: none; }
-body.lang-pt [data-lang="en"] { display: none; }
-body.lang-pt [data-lang="pt"] { display: revert; }
-
 /* Responsive */
 @media (max-width: 640px) {
   .hero {
