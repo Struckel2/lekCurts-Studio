@@ -81,6 +81,37 @@
   background: var(--accent-dim);
 }
 
+/* Steam button in nav */
+.nav-steam {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  margin-left: 8px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%);
+  border: 1px solid rgba(102, 192, 244, 0.35);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.nav-steam:hover {
+  color: #ffffff;
+  border-color: rgba(102, 192, 244, 0.6);
+}
+
+.nav-steam i {
+  color: #66c0f4;
+  font-size: 0.95rem;
+}
+
+.nav-steam-mobile {
+  display: none;
+}
+
 /* Language toggle (compact) */
 .lang-toggle {
   display: flex;
@@ -183,6 +214,14 @@
 
 .nav-mobile .lang-toggle {
   margin: var(--space-md) 0 0;
+  align-self: flex-start;
+}
+
+.nav-mobile .nav-steam-mobile {
+  display: inline-flex;
+  margin: var(--space-md) 0 0;
+  padding: 12px 20px;
+  font-size: 0.95rem;
   align-self: flex-start;
 }
 

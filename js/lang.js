@@ -16,6 +16,7 @@ export function initLang() {
 
 export function setLang(lang) {
   document.body.classList.toggle('lang-pt', lang === 'pt');
+  document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
   localStorage.setItem(STORAGE_KEY, lang);
 
   document.querySelectorAll('.lang-btn').forEach(btn => {

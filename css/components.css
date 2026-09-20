@@ -254,6 +254,37 @@
   background: var(--accent-dim);
 }
 
+/* Steam CTA button */
+.btn-steam {
+  background: linear-gradient(135deg, #1b2838 0%, #2a475e 100%);
+  color: #ffffff;
+  border: 1px solid rgba(102, 192, 244, 0.35);
+  box-shadow: 0 2px 16px rgba(27, 40, 56, 0.4);
+}
+
+.btn-steam:hover {
+  color: #ffffff;
+  transform: translateY(-1px);
+  border-color: rgba(102, 192, 244, 0.6);
+  box-shadow: 0 4px 24px rgba(27, 40, 56, 0.55);
+}
+
+.btn-steam i {
+  color: #66c0f4;
+  font-size: 1.1rem;
+}
+
+/* Steam widget embed */
+.steam-embed {
+  display: flex;
+  justify-content: center;
+}
+
+.steam-embed iframe {
+  max-width: 100%;
+  border-radius: var(--radius-md);
+}
+
 /* Feature card (for About section) */
 .feature-card {
   background: var(--bg-card);
